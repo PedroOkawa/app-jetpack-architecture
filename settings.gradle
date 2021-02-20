@@ -1,0 +1,3 @@
+rootProject.name = "app-jetpack-architecture"
+include ':app'
+include ':Search'

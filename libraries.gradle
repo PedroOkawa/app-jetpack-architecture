@@ -1,0 +1,84 @@
+ext.versions = [
+        'acompanistCoilVersion': "0.4.2",
+        'gradlePluginVersion': "7.0.0-alpha07",
+        'androidXCoreVersion': "1.5.0-beta01",
+        'androidXActivityComposeVersion': "1.3.0-alpha02",
+        'androidXComposeVersion': "1.0.0-alpha12",
+        'androidXFragmentVersion': "1.3.0",
+        'androidXHiltVersion': "1.0.0-alpha03",
+        'androidXNavigationVersion': "2.3.3",
+        'jetbrainsCoroutinesVersion': "1.4.1",
+        'jetbrainsKotlinVersion': "1.4.30",
+        'googleMaterialVersion': "1.2.1",
+        'googleHiltVersion': "2.32-alpha",
+        'squareMoshiVersion': "1.11.0",
+        'squareOkHttpVersion': "4.9.0",
+        'squareRetrofitVersion': "2.1.0"
+]
+
+ext {
+    Accompanist = [
+            Coil = [
+                    'coil': "dev.chrisbanes.accompanist:accompanist-coil:$versions.acompanistCoilVersion"
+            ]
+    ]
+
+    AndroidX = [
+            Core = [
+                    'coreKtx': "androidx.core:core-ktx:$versions.androidXCoreVersion"
+            ],
+            Compose = [
+                    'activity'    : "androidx.activity:activity-compose:$versions.androidXComposeVersion",
+                    'animation'    : "androidx.compose.animation:animation:$versions.androidXComposeVersion",
+                    'foundation'   : "androidx.compose.foundation:foundation:$versions.androidXComposeVersion",
+                    'iconsExtended': "androidx.compose.material:material-icons-extended:$versions.androidXComposeVersion",
+                    'layout'       : "androidx.compose.foundation:foundation-layout:$versions.androidXComposeVersion",
+                    'material'     : "androidx.compose.material:material:$versions.androidXComposeVersion",
+                    'runtime'      : "androidx.compose.runtime:runtime:$versions.androidXComposeVersion",
+                    'tooling'      : "androidx.compose.ui:ui-tooling:$versions.androidXComposeVersion",
+                    'ui'           : "androidx.compose.ui:ui:$versions.androidXComposeVersion",
+                    'uiUtil'       : "androidx.compose.ui:ui-util:$versions.androidXComposeVersion"
+            ],
+            Fragment = [
+                    'fragment': "androidx.fragment:fragment-ktx:$versions.androidXFragmentVersion"
+            ]
+    ]
+
+    JetBrains = [
+            Coroutines = [
+                    android: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.jetbrainsCoroutinesVersion",
+                    core   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.jetbrainsCoroutinesVersion",
+                    test   : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.jetbrainsCoroutinesVersion"
+            ],
+
+            Kotlin = [
+                    stdlib: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.jetbrainsKotlinVersion"
+            ]
+    ]
+
+    Google = [
+            Material = [
+                    material: "com.google.android.material:material:$versions.googleMaterialVersion"
+            ],
+            Hilt = [
+                    'gradlePlugin': "com.google.dagger:hilt-android-gradle-plugin:$versions.googleHiltVersion",
+                    'hilt': "com.google.dagger:hilt-android:$versions.googleHiltVersion",
+                    'compiler': "com.google.dagger:hilt-android-compiler:$versions.googleHiltVersion"
+            ]
+    ]
+
+    Square = [
+            Moshi = [
+                    moshi: "com.squareup.moshi:moshi:$versions.squareMoshiVersion"
+            ],
+
+            OkHttp = [
+                    loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$versions.squareOkHttpVersion"
+            ],
+
+            Retrofit = [
+                    retrofit: "com.squareup.retrofit2:retrofit:$versions.squareRetrofitVersion",
+                    moshiConverter: "com.squareup.retrofit2:converter-moshi:$versions.squareRetrofitVersion"
+            ]
+    ]
+}

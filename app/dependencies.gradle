@@ -1,0 +1,33 @@
+apply from: "../libraries.gradle"
+
+dependencies {
+    api "com.google.dagger:hilt-android:$versions.googleHiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$versions.googleHiltVersion"
+
+    api "androidx.hilt:hilt-lifecycle-viewmodel:$versions.androidXHiltVersion"
+    kapt "androidx.hilt:hilt-compiler:$versions.androidXHiltVersion"
+
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'com.google.android.material:material:1.2.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    api "androidx.fragment:fragment-ktx:$versions.androidXFragmentVersion"
+
+    api "androidx.navigation:navigation-dynamic-features-fragment:$versions.androidXNavigationVersion"
+    api "androidx.navigation:navigation-fragment-ktx:$versions.androidXNavigationVersion"
+    api "androidx.navigation:navigation-ui-ktx:$versions.androidXNavigationVersion"
+
+    api "androidx.activity:activity-compose:$versions.androidXActivityComposeVersion"
+
+    api "androidx.compose.animation:animation:$versions.androidXComposeVersion"
+    api "androidx.compose.foundation:foundation:$versions.androidXComposeVersion"
+    api "androidx.compose.material:material-icons-extended:$versions.androidXComposeVersion"
+    api "androidx.compose.foundation:foundation-layout:$versions.androidXComposeVersion"
+    api "androidx.compose.material:material:$versions.androidXComposeVersion"
+    api "androidx.compose.runtime:runtime:$versions.androidXComposeVersion"
+    api "androidx.compose.ui:ui-tooling:$versions.androidXComposeVersion"
+    api "androidx.compose.ui:ui:$versions.androidXComposeVersion"
+    api "androidx.compose.ui:ui-util:$versions.androidXComposeVersion"
+}

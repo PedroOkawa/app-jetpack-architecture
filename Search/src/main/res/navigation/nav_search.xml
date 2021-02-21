@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/search"
-        android:name="com.okawa.jetpack.arch.search.ui.SearchFragment" >
+        android:name="com.okawa.jetpack.arch.search.ui.search.SearchFragment" >
 
         <action
             android:id="@+id/toDetails"
@@ -16,6 +16,6 @@
 
     <fragment
         android:id="@+id/details"
-        android:name="com.okawa.jetpack.arch.search.ui.DetailsFragment" />
+        android:name="com.okawa.jetpack.arch.search.ui.details.DetailsFragment" />
 
 </navigation>

@@ -7,8 +7,11 @@ dependencies {
     api "androidx.hilt:hilt-lifecycle-viewmodel:$versions.androidXHiltVersion"
     kapt "androidx.hilt:hilt-compiler:$versions.androidXHiltVersion"
 
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'com.google.android.material:material:1.2.1'
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$versions.androidXLifecycleVersion"
+
+    api "androidx.core:core-ktx:$versions.androidXCoreVersion"
+    api "com.google.android.material:material:$versions.googleMaterialVersion"
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -20,6 +23,7 @@ dependencies {
     api "androidx.navigation:navigation-ui-ktx:$versions.androidXNavigationVersion"
 
     api "androidx.activity:activity-compose:$versions.androidXActivityComposeVersion"
+    api "androidx.constraintlayout:constraintlayout-compose:$versions.androidXConstraintLayoutComposeVersion"
 
     api "androidx.compose.animation:animation:$versions.androidXComposeVersion"
     api "androidx.compose.foundation:foundation:$versions.androidXComposeVersion"
@@ -30,4 +34,6 @@ dependencies {
     api "androidx.compose.ui:ui-tooling:$versions.androidXComposeVersion"
     api "androidx.compose.ui:ui:$versions.androidXComposeVersion"
     api "androidx.compose.ui:ui-util:$versions.androidXComposeVersion"
+
+    api "dev.chrisbanes.accompanist:accompanist-coil:$versions.acompanistCoilVersion"
 }

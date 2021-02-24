@@ -16,10 +16,10 @@ import dev.chrisbanes.accompanist.coil.CoilImage
 @Composable
 fun PreviewImages() {
     Column {
-        Image(
+        CachedImage(
             imageUrl = ""
         )
-        RoundedCornerImage(
+        CachedRoundedCornerImage(
             imageUrl = "",
             modifier = Modifier.size(36.dp)
         )
@@ -31,7 +31,7 @@ fun PreviewImages() {
 }
 
 @Composable
-fun Image(imageUrl: String, contentDescription: String = "") {
+fun CachedImage(imageUrl: String, contentDescription: String = "") {
     CoilImage(
         data = imageUrl as Any,
         contentDescription = contentDescription
@@ -39,7 +39,7 @@ fun Image(imageUrl: String, contentDescription: String = "") {
 }
 
 @Composable
-fun RoundedCornerImage(
+fun CachedRoundedCornerImage(
     imageUrl: String,
     modifier: Modifier = Modifier,
     contentDescription: String = ""

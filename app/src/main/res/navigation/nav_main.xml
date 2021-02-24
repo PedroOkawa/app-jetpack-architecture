@@ -2,12 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@+id/nav_search">
+    app:startDestination="@+id/nav_current">
 
     <include-dynamic
-        android:id="@id/nav_search"
-        app:moduleName="search"
-        app:graphResName="nav_search"
-        app:graphPackage="${applicationId}.search" />
+        android:id="@id/nav_current"
+        app:moduleName="current"
+        app:graphResName="nav_current"
+        app:graphPackage="${applicationId}.current" />
 
 </navigation>

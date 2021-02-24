@@ -61,18 +61,20 @@ fun TextInput(
         }
         TextField(
             value = textFieldState,
+            onValueChange = {
+                    newValueState ->
+                textFieldState = newValueState
+                onInputChanged(textFieldState.text)
+            },
             label = {
                 Text(
                     text = hint,
                     style = MaterialTheme.typography.body2
                 )
             },
-            onValueChange = { newValueState ->
-                textFieldState = newValueState
-                onInputChanged(textFieldState.text)
-            },
-            backgroundColor = Color.Transparent,
-            modifier = iconInputModifier.weight(1f)
+            modifier = Modifier
+                .background(Color.Transparent)
+                .weight(1.0f)
         )
         if (drawableResEnd != null) {
             Icon(

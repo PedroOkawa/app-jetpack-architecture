@@ -7,14 +7,17 @@ dependencies {
     api "androidx.hilt:hilt-lifecycle-viewmodel:$versions.androidXHiltVersion"
     kapt "androidx.hilt:hilt-compiler:$versions.androidXHiltVersion"
 
-    api "androidx.lifecycle:lifecycle-livedata-ktx:$versions.androidXLifecycleVersion"
-
     api "androidx.core:core-ktx:$versions.androidXCoreVersion"
     api "com.google.android.material:material:$versions.googleMaterialVersion"
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    api "io.reactivex.rxjava2:rxjava:$versions.reactiveXRxVersion"
+    api "io.reactivex.rxjava2:rxkotlin:$versions.reactiveXRxVersion"
+
+    implementation "com.google.android.gms:play-services-location:$versions.googlePlayServicesVersion"
 
     api "androidx.fragment:fragment-ktx:$versions.androidXFragmentVersion"
 
@@ -36,4 +39,10 @@ dependencies {
     api "androidx.compose.ui:ui-util:$versions.androidXComposeVersion"
 
     api "dev.chrisbanes.accompanist:accompanist-coil:$versions.acompanistCoilVersion"
+
+    api "com.squareup.moshi:moshi:$versions.squareMoshiVersion"
+    api "com.squareup.okhttp3:logging-interceptor:$versions.squareOkHttpVersion"
+
+    api "com.squareup.retrofit2:retrofit:$versions.squareRetrofitVersion"
+    api "com.squareup.retrofit2:converter-moshi:$versions.squareRetrofitVersion"
 }

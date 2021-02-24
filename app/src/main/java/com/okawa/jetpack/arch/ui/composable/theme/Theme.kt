@@ -9,20 +9,28 @@ import androidx.compose.runtime.Composable
 private val LightThemeColors = lightColors(
     primary = ColorsLight.primaryColor,
     primaryVariant = ColorsLight.primaryDarkColor,
-    onPrimary = ColorsLight.primaryTextColor,
     secondary = ColorsLight.secondaryColor,
     secondaryVariant = ColorsLight.secondaryDarkColor,
+    background = ColorsLight.primaryLightColor,
+    surface = ColorsLight.secondaryLightColor,
+    error = ColorsLight.onError,
+    onPrimary = ColorsLight.primaryTextColor,
     onSecondary = ColorsLight.secondaryTextColor,
-    error = ColorsLight.onError
+    onBackground = ColorsLight.primaryTextColor,
+    onSurface = ColorsLight.secondaryTextColor
 )
 
 private val DarkThemeColors = darkColors(
     primary = ColorsDark.primaryColor,
     primaryVariant = ColorsDark.primaryDarkColor,
-    onPrimary = ColorsDark.primaryTextColor,
     secondary = ColorsDark.secondaryColor,
+    background = ColorsDark.primaryLightColor,
+    surface = ColorsDark.secondaryLightColor,
+    error = ColorsDark.onError,
+    onPrimary = ColorsDark.primaryTextColor,
     onSecondary = ColorsDark.secondaryTextColor,
-    error = ColorsDark.onError
+    onBackground = ColorsDark.primaryTextColor,
+    onSurface = ColorsDark.secondaryTextColor
 )
 
 @Composable

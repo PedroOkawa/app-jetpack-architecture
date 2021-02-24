@@ -4,18 +4,19 @@ ext.versions = [
         'androidXCoreVersion': "1.5.0-beta01",
         'androidXActivityComposeVersion': "1.3.0-alpha02",
         'androidXConstraintLayoutComposeVersion': "1.0.0-alpha02",
-        'androidXComposeVersion': "1.0.0-alpha12",
+        'androidXComposeVersion': "1.0.0-beta01",
         'androidXFragmentVersion': "1.3.0",
         'androidXHiltVersion': "1.0.0-alpha03",
-        'androidXLifecycleVersion': "2.3.0",
         'androidXNavigationVersion': "2.3.3",
         'jetbrainsCoroutinesVersion': "1.4.1",
         'jetbrainsKotlinVersion': "1.4.30",
         'googleMaterialVersion': "1.3.0",
         'googleHiltVersion': "2.32-alpha",
+        'googlePlayServicesVersion': "18.0.0",
+        'reactiveXRxVersion': "2.2.0",
         'squareMoshiVersion': "1.11.0",
         'squareOkHttpVersion': "4.9.0",
-        'squareRetrofitVersion': "2.1.0"
+        'squareRetrofitVersion': "2.9.0"
 ]
 
 ext {

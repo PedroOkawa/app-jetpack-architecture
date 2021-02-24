@@ -11,7 +11,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.okawa.jetpack.arch.ui.composable.theme.JetpackArchTheme
 import com.okawa.jetpack.arch.ui.composable.theme.componentSmall
 import com.okawa.jetpack.arch.ui.composable.theme.componentXXXLarge
 
@@ -29,20 +28,18 @@ fun CircularLoading(
     text: String,
     modifier: Modifier = Modifier
 ) {
-    JetpackArchTheme {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            CircularProgressIndicator(
-                modifier = modifier
-                    .size(size = componentXXXLarge)
-                    .padding(all = componentSmall)
-            )
-            Text(
-                text = text,
-                style = MaterialTheme.typography.caption
-            )
-        }
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        CircularProgressIndicator(
+            modifier = modifier
+                .size(size = componentXXXLarge)
+                .padding(all = componentSmall)
+        )
+        Text(
+            text = text,
+            style = MaterialTheme.typography.caption
+        )
     }
 }
 
@@ -51,19 +48,17 @@ fun HorizontalLoading(
     text: String,
     modifier: Modifier = Modifier
 ) {
-    JetpackArchTheme {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            LinearProgressIndicator(
-                modifier = modifier
-                    .size(size = componentXXXLarge)
-                    .padding(all = componentSmall)
-            )
-            Text(
-                text = text,
-                style = MaterialTheme.typography.caption
-            )
-        }
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        LinearProgressIndicator(
+            modifier = modifier
+                .size(size = componentXXXLarge)
+                .padding(all = componentSmall)
+        )
+        Text(
+            text = text,
+            style = MaterialTheme.typography.caption
+        )
     }
 }
